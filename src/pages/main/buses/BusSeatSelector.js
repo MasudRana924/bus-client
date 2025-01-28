@@ -138,6 +138,7 @@ const BusSeatSelector = () => {
     // </div>
 
 
+    
     <div className="mt-24 bg-gray-100 rounded-lg p-4 w-3/4  max-w-sm mx-auto">
     <div className="flex justify-between">
       <h2 className="text-sm font-medium mb-2 text-start">Select Seat</h2>
@@ -188,7 +189,7 @@ const BusSeatSelector = () => {
               key={seat._id}
               onClick={() => handleSeatSelect(seat.seatNumber)}
               disabled={seat.isBooked || (seat.holdUntil && new Date(seat.holdUntil) > new Date())}
-              className={`p-2 rounded-md transition-colors ${
+              className={`p-2  rounded-md transition-colors ${
                 seat.isBooked
                   ? "bg-red-500 text-white cursor-not-allowed"
                   : selectedSeats.includes(seat.seatNumber)

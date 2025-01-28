@@ -27,74 +27,11 @@ const Home = () => {
   };
 
   return (
-    // <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-    //   <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
-    //     <h2 className="text-2xl font-bold text-center mb-6 text-blue-600">Find Your Bus</h2>
-    //     <div className="space-y-4">
-    //       <div>
-    //         <label className="block mb-2 text-sm font-medium text-gray-700 text-start">From</label>
-    //         <Select
-    //           value={fromLocation}
-    //           onChange={(value) => setFromLocation(value)}
-    //           placeholder="Select starting location"
-    //           className="w-full"
-    //           suffixIcon={<MapPin size={18} className="text-blue-600" />}
-    //         >
-    //           {locations.map((location) => (
-    //             <Option key={location} value={location} disabled={location === toLocation}>
-    //               {location}
-    //             </Option>
-    //           ))}
-    //         </Select>
-    //       </div>
-
-    //       <div>
-    //         <label className="block mb-2 text-sm font-medium text-gray-700 text-start">To</label>
-    //         <Select
-    //           value={toLocation}
-    //           onChange={(value) => setToLocation(value)}
-    //           placeholder="Select destination"
-    //           className="w-full"
-    //           suffixIcon={<MapPin size={18} className="text-blue-600" />}
-    //         >
-    //           {locations.map((location) => (
-    //             <Option key={location} value={location} disabled={location === fromLocation}>
-    //               {location}
-    //             </Option>
-    //           ))}
-    //         </Select>
-    //       </div>
-
-    //       <div>
-    //         <label className="block mb-2 text-sm font-medium text-gray-700 text-start">Travel Date</label>
-    //         <DatePicker
-    //           value={travelDate}
-    //           onChange={setTravelDate}
-    //           className="w-full"
-    //           suffixIcon={<Calendar size={18} className="text-blue-600" />}
-    //           disabledDate={(current) => current && current.isBefore(dayjs(), 'day')}
-    //           allowClear={false}
-    //         />
-    //       </div>
-
-    //       <Button
-    //         type="primary"
-    //         icon={<Search size={18} />}
-    //         className="w-full mt-4 bg-blue-600 hover:bg-blue-700"
-    //         onClick={handleSearch}
-    //         loading={isLoading}  // Button shows a spinner when loading
-    //         disabled={!(fromLocation && toLocation && travelDate)}
-    //       >
-    //         Find Buses
-    //       </Button>
-    //     </div>
-    //   </div>
-    // </div>
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 flex items-center justify-center p-4">
-      <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-md border border-gray-100">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold text-gray-800">Find Your Bus</h2>
-          <p className="text-gray-500 mt-2">Search for available buses and book your journey</p>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 flex items-center justify-center p-4 mt-12 ">
+      <div className="bg-white shadow-2xl rounded-lg p-8 w-full max-w-md border border-gray-100">
+        <div className="text-center mb-4 md:mb-8">
+          <h2 className="text-sm md:text-2xl font-bold text-gray-800">Find Your Bus</h2>
+          <p className="text-gray-500 mt-2 text-xs md:text-sm">Search for available buses and book your journey</p>
         </div>
 
         <div className="space-y-6">

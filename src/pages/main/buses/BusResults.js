@@ -16,8 +16,8 @@ const BusResults = () => {
 
   if (buses.length === 0) {
     return (
-      <div className="min-h-screen  flex items-center justify-center p-4">
-        <div className="bg-white shadow-2xl rounded-xl border border-gray-100 p-12 text-center w-full max-w-sm transform hover:scale-102 transition-all duration-300">
+      <div className="min-h-screen  flex items-center justify-center p-4 mt-12 md:mt-0">
+        <div className="bg-white shadow-2xl rounded-lg border border-gray-100 p-12 text-center w-full max-w-md transform hover:scale-102 transition-all duration-300">
           <div className="flex justify-center mb-8">
             <div className="bg-red-50 p-4 rounded-full">
               <AlertCircle className="text-red-500" size={48} strokeWidth={1.5} />
@@ -48,7 +48,7 @@ const BusResults = () => {
               </li>
             </ul>
             <Link to="/">
-              <button className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl hover:shadow-lg hover:opacity-90 transition-all duration-300 font-medium">
+              <button className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-2 rounded-lg hover:shadow-lg hover:opacity-90 transition-all duration-300 font-medium">
                 Modify Search
               </button>
             </Link>
